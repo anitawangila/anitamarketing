@@ -1,0 +1,95 @@
+.service{
+    padding: 0 50px;
+}
+
+.title{
+    border-bottom: 5px solid #282561;
+    font-size: 20px;
+    width: max-content;
+    margin-top: 30px;
+    color: green;
+}
+.subtitle{
+    font-size: 40px;
+    color: #282561;
+}
+.container{
+    display: flex;
+   justify-content: space-between;
+    flex-wrap: wrap;
+}
+    /*no problem so far*/  
+.info{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-bottom: 50px;
+    position: relative;
+    /*transition: all 0.5s ease;*/
+      
+}
+.info:hover{
+    transform: translateY(15px);
+}
+.info:hover .photos{
+    transform: scale(1.1);
+}
+.info:hover::before{
+    opacity: 1;
+}
+.info:hover .desc{
+    opacity: 1;
+ }
+.photos{
+    width: 85%;
+    height: 85%;
+    border-radius: 50%;
+   position: absolute;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+.desc{
+    text-align: center;
+    position: absolute;
+    width: 70%;
+    z-index: 999;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: snow;
+    opacity: 0;
+    transition: all 1s ease;
+}
+.name{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-weight: bold;
+    letter-spacing: 1.3;
+    color: green;
+}
+.name:hover{
+    color: #282561;
+}
+
+
+@media(max-width: 990px) {
+    .services{
+        padding: 20px;
+    }
+    .info{
+        width: 300px;
+        height: 300px;
+    }
+    .subtitle{
+        font-size: 30px;
+        color: darkblue;
+    }
+    .container{
+        justify-content: center;
+    }
+}

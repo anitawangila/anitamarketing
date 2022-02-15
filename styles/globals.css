@@ -14,3 +14,150 @@ a {
 * {
   box-sizing: border-box;
 }
+.service{
+  display: flex;
+  padding: 50px;
+}
+.photos{
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapper{
+  flex: 1;
+}
+.imgContainer{
+width: 30%;
+margin: 5px;
+position: relative;
+
+}
+.imgContainer:nth-child(6){
+ border-bottom-right-radius: 50%;
+ overflow: hidden;
+  }
+  .imgContainer:nth-child(3){
+    border-top-right-radius: 50%;
+    overflow: hidden;
+     }
+  .imgContainer:nth-child(4){
+    border-bottom-left-radius: 50%;
+    overflow: hidden;
+     }
+     .wrapper h1{
+       font-size: 18px;
+       color: green;
+     }
+     .wrapper p{
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+.container{
+  background-color: azure;
+}
+.container1 h3{
+  text-align: center;
+}
+.about{
+  padding: 50px;
+ 
+}
+.ann{
+  width: 100%;
+  display: block;
+
+}
+.header h2{
+  width: 100%;
+  text-align: left;
+  margin-bottom: 30px;
+  font-size: 30px;
+  text-transform: capitalize;
+  color: green;
+}
+.contx{
+  float: right;
+  width: 50%;
+  margin-bottom: 80px;
+  background-image: url("/4.png");
+  
+}
+.contx p{
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.contx h3{
+  
+  color: #282561;
+}
+.image-section{
+  float: left;
+  width: 40%;
+}
+.image-section img{
+height: auto;
+  width: 100%;
+  margin-bottom: 90px;
+  margin-top: 50px;
+}
+
+
+@media(max-width: 990px) {
+  .ann{
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .contx{
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+    
+  }
+  .image-section{
+    float: none;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .image-section img{
+      height: auto;
+      width: 100%;
+      display: block;
+      margin: auto;
+    }
+    .header h2{
+      width: 100%;
+      text-align: center;
+     
+    }
+    .contx p{
+      margin-top: 20px;
+      font-size: 18px;
+      line-height: 1.4;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+    .service{
+      flex-direction: column-reverse;
+      padding: 20px;
+    }
+    .wrapper h1{
+      font-size: 15px;
+      color: green;
+    }
+    .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    }
+    .imgContainer{
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      overflow: hidden;
+      }
+}

@@ -1,0 +1,108 @@
+
+.section{
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.content{
+    margin: 3rem;
+}
+.content .subTitle{
+    color: green;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.content .title{
+    font-size: 2.8rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    color: #282561;
+    margin: 0px;
+
+}
+.brand{
+    color: green;
+        
+}
+.description{
+    font-size: 1.2rem;
+    letter-spacing: 0.12rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-family:Arial, Helvetica, sans-serif
+}
+.last{
+    display: flex;
+    align-items: center;
+}
+.button{
+    border-radius: 5px;
+    background-color: #5beb4e;
+    color: #fff;
+    font-weight: bold;
+    border: 2px solid #282561;
+    width: 150px;
+    padding: 10PX;
+    cursor: pointer;
+    margin-top: 10px;
+    
+    }
+
+    
+    .image img{
+        height: 22rem;
+       object-fit: cover;
+        background-repeat: no-repeat;
+        margin-top: 50px;
+        margin-right: 20px;
+        transition: all 1s ease;
+           
+    }
+    .image img:hover{
+        transform: scale(1.1);
+           
+    }/*
+    .image img::before{
+        opacity: 1;
+    }*/
+/*@media screen and (min-width: 360px) and (max-width: 480px)*/
+@media(max-width: 990px){ 
+    .section{
+        flex-direction: column;
+        
+        }
+        .content{
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        text-align: center;
+        }
+        .description{
+          display: none;
+          }
+        .image img{
+            object-fit: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+           
+        }
+        .content .title{
+            font-size: 25px;
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+        .content .subTitle{
+            font-size: 15px;
+        font-weight: bold;}
+        
+        .button{
+            margin-top: 20px;
+        
+            }
+        
+}
